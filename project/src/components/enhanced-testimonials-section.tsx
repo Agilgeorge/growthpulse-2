@@ -119,13 +119,7 @@ export const EnhancedTestimonialsSection = () => {
           </motion.div>
         </div>
 
-        {/* Apple Cards Carousel */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-light text-white mb-12 text-center tracking-tight uppercase">
-            Success Stories Gallery
-          </h3>
-          <AppleCardsCarousel items={cards} initialScroll={0} />
-        </div>
+       
 
         {/* Infinite Moving Cards */}
         <div className="mb-20">
@@ -189,33 +183,7 @@ export const EnhancedTestimonialsSection = () => {
         </div>
 
         {/* CTA with Gradient Background */}
-        <div className="text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 p-16 rounded-2xl relative overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-black/20"></div>
-            <div className="relative z-10">
-              <h3 className="text-4xl font-light mb-6 tracking-tight text-white">
-                READY TO JOIN OUR SUCCESS STORIES?
-              </h3>
-              <p className="text-xl mb-12 font-light text-white/90">
-                Let's discuss how we can achieve similar breakthrough results for your business.
-              </p>
-              <motion.button 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-black px-8 py-4 font-medium text-sm tracking-wide hover:bg-gray-200 transition-all duration-300 flex items-center mx-auto rounded-lg"
-              >
-                GET YOUR FREE GROWTH AUDIT
-                <ArrowRight className="ml-3 h-4 w-4" />
-              </motion.button>
-            </div>
-          </motion.div>
-        </div>
+        
       </div>
     </div>
   );

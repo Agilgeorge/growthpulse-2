@@ -136,10 +136,10 @@ export const IndustriesSection = () => {
                   <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 inline-flex mb-6">
                     {industry.icon}
                   </div>
-                  <h3 className="text-xl font-light mb-4 tracking-wide uppercase">
+                  <h3 className="text-xl font-medium mb-4 tracking-wide uppercase">
                     {industry.name}
                   </h3>
-                  <p className="text-white/90 font-light text-sm leading-relaxed mb-6">
+                  <p className="text-white/90 font-normal text-sm leading-relaxed mb-6">
                     {industry.description}
                   </p>
                   <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 inline-block">

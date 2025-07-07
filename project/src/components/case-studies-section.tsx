@@ -70,7 +70,7 @@ export const CaseStudiesSection = () => {
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center px-6 py-2 border border-gray-300 mb-8">
-              <span className="text-gray-600 text-sm font-light tracking-widest uppercase">
+              <span className="text-gray-600 text-sm font-normal tracking-widest uppercase">
                 Proven Results
               </span>
             </div>
@@ -82,7 +82,7 @@ export const CaseStudiesSection = () => {
               </span>
             </h2>
             
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-normal leading-relaxed">
               See how our integrated approach to technology and marketing has helped companies 
               achieve breakthrough growth and dominate their markets.
             </p>

@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, TrendingUp, Zap, Target, Star } from "lucide-react";
+import Lottie from "lottie-react";
+import gphero1 from "./assets/gphero1.json";
 
 export const HeroSection = () => {
   return (
@@ -57,20 +59,17 @@ export const HeroSection = () => {
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-6xl lg:text-8xl font-light text-black mb-8 leading-[0.9] tracking-tight">
-                WE DON'T DO
-                <span className="block font-normal italic text-gray-700">
-                  boring
-                </span>
-                <span className="block">
-                  MARKETING
-                </span>
-              </h1>
+              <h1 className="text-6xl lg:text-8xl font-light text-black mb-6 leading-[0.9] tracking-tight">
+  We Are  
+  <span className="block font-normal italic text-gray-700">
+    Your Growth Partner
+  </span>
+</h1>
+
 
               {/* Subheadline */}
-              <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-2xl font-light">
-                From product to platform, from data to decisions, from launch to loyalty. 
-                We create marketing engines that scale your business and deliver measurable results.
+              <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-2xl font-normal">
+               From launch to pipeline, from product to profit — we turn software into scalable businesses through data-led marketing.
               </p>
 
               {/* CTA Buttons */}
@@ -113,12 +112,12 @@ export const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              {/* Hero Image */}
+              {/* Hero Image (replaced with Lottie) */}
               <div className="relative">
-                <img 
-                  src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Growth Marketing Team"
-                  className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                <Lottie 
+                  animationData={gphero1}
+                  loop
+                  className="w-full h-[600px] "
                 />
                 
                 {/* Overlay Stats Card */}
@@ -159,17 +158,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center space-y-2"
-        >
-          <div className="w-px h-12 bg-gray-400"></div>
-          <span className="text-gray-500 text-xs tracking-widest uppercase">Scroll</span>
-        </motion.div>
-      </div>
+    
     </div>
   );
 };

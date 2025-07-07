@@ -89,7 +89,7 @@ export const EnhancedCaseStudiesSection = () => {
               </span>
             </h2>
 
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-medium leading-relaxed">
               See how our integrated approach to technology and marketing has helped companies 
               achieve breakthrough growth and dominate their markets.
             </p>
@@ -119,7 +119,7 @@ export const EnhancedCaseStudiesSection = () => {
 
                   <CardItem
                     translateZ="60"
-                    className="text-3xl font-light text-black mb-4 tracking-tight"
+                    className="text-3xl font-medium text-black mb-4 tracking-tight"
                   >
                     {study.company}
                   </CardItem>
@@ -127,7 +127,7 @@ export const EnhancedCaseStudiesSection = () => {
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-gray-600 text-sm mb-6 font-light leading-relaxed"
+                    className="text-gray-600 text-sm mb-6 font-normal leading-relaxed"
                   >
                     <strong>Challenge:</strong> {study.challenge}
                   </CardItem>
@@ -137,7 +137,7 @@ export const EnhancedCaseStudiesSection = () => {
                     className="bg-gray-100 border border-gray-200 p-4 mb-6 rounded-lg"
                   >
                     <h4 className="font-light text-black mb-2 tracking-wide uppercase text-sm">Our Integrated Solution:</h4>
-                    <p className="text-gray-700 font-light text-sm">{study.solution}</p>
+                    <p className="text-gray-700 font-normal text-sm">{study.solution}</p>
                   </CardItem>
 
                   <div className="grid grid-cols-3 gap-4 mb-6">
@@ -181,32 +181,7 @@ export const EnhancedCaseStudiesSection = () => {
         </div>
 
         {/* CTA Section (FIXED motion.button) */}
-        <div className="text-center mt-20">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-gradient-to-r from-black via-gray-900 to-black text-white p-16 rounded-2xl relative overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-cyan-600/20"></div>
-            <div className="relative z-10">
-              <h3 className="text-4xl font-light mb-6 tracking-tight">
-                READY TO BE OUR NEXT SUCCESS STORY?
-              </h3>
-              <p className="text-xl mb-12 font-light text-gray-300">
-                Let's discuss how we can achieve similar breakthrough results for your business.
-              </p>
-              <motion.button 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 font-medium text-sm tracking-wide hover:from-blue-600 hover:to-purple-600 transition-all duration-300 rounded-lg"
-              >
-                GET YOUR FREE GROWTH AUDIT
-              </motion.button>
-            </div>
-          </motion.div>
-        </div>
+       
       </div>
     </div>
   );

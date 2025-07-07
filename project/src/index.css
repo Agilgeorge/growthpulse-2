@@ -228,3 +228,12 @@ a:focus {
     line-height: 3.5rem;
   }
 }
+
+.value-card {
+  @apply bg-black text-white transition-all duration-300;
+}
+.value-card:hover {
+  background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+  /* Example: orange to peach gradient */
+  color: #fff;
+}
