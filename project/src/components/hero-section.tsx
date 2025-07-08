@@ -74,10 +74,17 @@ export const HeroSection = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 mb-16">
-                <button className="group bg-black text-white px-8 py-4 font-medium text-sm tracking-wide hover:bg-gray-800 transition-all duration-300 flex items-center justify-center">
-                  START YOUR GROWTH JOURNEY
-                  <ArrowRight className="ml-3 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                <button
+  onClick={() => {
+    document
+      .getElementById("services")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="group bg-black text-white px-8 py-4 font-medium text-sm tracking-wide hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
+>
+  START YOUR GROWTH JOURNEY
+  <ArrowRight className="ml-3 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+</button>
                 
                 <button className="flex items-center justify-center space-x-3 text-black hover:text-gray-700 transition-colors">
                   <div className="w-12 h-12 rounded-full border border-gray-400 flex items-center justify-center hover:border-black transition-colors">

@@ -237,3 +237,7 @@ a:focus {
   /* Example: orange to peach gradient */
   color: #fff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
