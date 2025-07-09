@@ -165,7 +165,7 @@ We build marketing engines that drive revenue and scale.
                 initial={{ y: 0 }}
                 whileHover={{ y: -16 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center transition-all duration-300 cursor-pointer group hover:shadow-xl"
+                className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center transition-all duration-300 cursor-pointer group hover:shadow-xl hover:border-2 hover:border-black"
               >
                 <div className="mb-4 ">{value.icon}</div>
                 <h4 className="text-lg font-bold mb-2 text-black">{value.title}</h4>
